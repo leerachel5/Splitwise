@@ -8,12 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		EB140C9C2C67388A0070C00F /* SplitwiseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB140C9B2C67388A0070C00F /* SplitwiseApp.swift */; };
-		EB140C9E2C67388A0070C00F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB140C9D2C67388A0070C00F /* ContentView.swift */; };
+		EB140C9E2C67388A0070C00F /* TripListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB140C9D2C67388A0070C00F /* TripListView.swift */; };
 		EB140CA02C67388B0070C00F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB140C9F2C67388B0070C00F /* Assets.xcassets */; };
 		EB140CA32C67388B0070C00F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB140CA22C67388B0070C00F /* Preview Assets.xcassets */; };
 		EB140CAD2C67388C0070C00F /* SplitwiseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB140CAC2C67388C0070C00F /* SplitwiseTests.swift */; };
 		EB140CB72C67388C0070C00F /* SplitwiseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB140CB62C67388C0070C00F /* SplitwiseUITests.swift */; };
 		EB140CB92C67388C0070C00F /* SplitwiseUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB140CB82C67388C0070C00F /* SplitwiseUITestsLaunchTests.swift */; };
+		EB140CC82C6742F80070C00F /* Trip.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB140CC72C6742F80070C00F /* Trip.swift */; };
+		EB140CCA2C6743E10070C00F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB140CC92C6743E10070C00F /* User.swift */; };
+		EB140CD22C6764B00070C00F /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB140CD12C6764B00070C00F /* View+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +39,7 @@
 /* Begin PBXFileReference section */
 		EB140C982C67388A0070C00F /* Splitwise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Splitwise.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB140C9B2C67388A0070C00F /* SplitwiseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitwiseApp.swift; sourceTree = "<group>"; };
-		EB140C9D2C67388A0070C00F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		EB140C9D2C67388A0070C00F /* TripListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripListView.swift; sourceTree = "<group>"; };
 		EB140C9F2C67388B0070C00F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EB140CA22C67388B0070C00F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		EB140CA82C67388C0070C00F /* SplitwiseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SplitwiseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +47,9 @@
 		EB140CB22C67388C0070C00F /* SplitwiseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SplitwiseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB140CB62C67388C0070C00F /* SplitwiseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitwiseUITests.swift; sourceTree = "<group>"; };
 		EB140CB82C67388C0070C00F /* SplitwiseUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitwiseUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		EB140CC72C6742F80070C00F /* Trip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trip.swift; sourceTree = "<group>"; };
+		EB140CC92C6743E10070C00F /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		EB140CD12C6764B00070C00F /* View+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,7 +101,9 @@
 			isa = PBXGroup;
 			children = (
 				EB140C9B2C67388A0070C00F /* SplitwiseApp.swift */,
-				EB140C9D2C67388A0070C00F /* ContentView.swift */,
+				EB140CC62C6742D40070C00F /* Model */,
+				EB140CC52C6742CC0070C00F /* View */,
+				EB140CD32C6764B30070C00F /* Extensions */,
 				EB140C9F2C67388B0070C00F /* Assets.xcassets */,
 				EB140CA12C67388B0070C00F /* Preview Content */,
 			);
@@ -125,6 +133,31 @@
 				EB140CB82C67388C0070C00F /* SplitwiseUITestsLaunchTests.swift */,
 			);
 			path = SplitwiseUITests;
+			sourceTree = "<group>";
+		};
+		EB140CC52C6742CC0070C00F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EB140C9D2C67388A0070C00F /* TripListView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EB140CC62C6742D40070C00F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EB140CC72C6742F80070C00F /* Trip.swift */,
+				EB140CC92C6743E10070C00F /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EB140CD32C6764B30070C00F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				EB140CD12C6764B00070C00F /* View+Extensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +290,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EB140C9E2C67388A0070C00F /* ContentView.swift in Sources */,
+				EB140CC82C6742F80070C00F /* Trip.swift in Sources */,
+				EB140C9E2C67388A0070C00F /* TripListView.swift in Sources */,
 				EB140C9C2C67388A0070C00F /* SplitwiseApp.swift in Sources */,
+				EB140CD22C6764B00070C00F /* View+Extensions.swift in Sources */,
+				EB140CCA2C6743E10070C00F /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

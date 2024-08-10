@@ -11,7 +11,9 @@ import SwiftUI
 struct SplitwiseApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            TripListView(trips: [
+                Trip(id: "0", name: "Japan", startDate: Date(), endDate: Date(), users: [User(id: "0", name: "Jane"), User(id: "1", name: "John")])
+            ])
         }
     }
 }
